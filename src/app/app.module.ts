@@ -10,9 +10,15 @@ import { APP_ROUTES } from './app.routes';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
 
+import { FormsModule } from '@angular/forms';
+
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+
+
+
 
 
 
@@ -23,12 +29,15 @@ import { RegisterComponent } from './login/register.component';
     AppComponent,
     LoginComponent,
     RegisterComponent
+
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    SharedModule
+    SharedModule,
+    FormsModule
+
   ],
   providers: [
 
